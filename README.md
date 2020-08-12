@@ -4,7 +4,7 @@ __Android NetHelper is a java class which helps android developer to perform int
 
  ## What you can do with NetHelper are the following.
 * Sending GET & POST requests.
-* Uploading files and other data with progress indicators (like progressbar).
+* Uploading files and other data (optional) with progress indicators (like progressbar).
 * Downloading files from internet with progress indicators. You can hide and show the downloading notification.
 
  ## All you need is
