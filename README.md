@@ -117,8 +117,8 @@ __Android NetHelper is a java class which helps android developer to perform int
 ``` 
  `.download(true)` to make notification visible and `.download(false)` is to make it invisible
 
-  ### You can also check the response whether it's JSON or not using static NetHelper.isJSON(response) method
+  ### You can also check the response whether it's JSON or not using static `NetHelper.isJSON(response)` method
   
-  NetHelper.isJSON(response) returns true if the response is in JSON format. 
+  `NetHelper.isJSON(response)` returns true if the response is in JSON format. 
   Otherwise, it returns false.
 
