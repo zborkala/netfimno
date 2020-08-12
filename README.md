@@ -1,6 +1,6 @@
 # Android NetHelper
 
-__Android NetHelper is a java class which helps android developer to perform internet communication without any external third party libraries. NetHelper uses built-in android HttpUrlConnection.class to perform ever kind of network requests.__
+__Android NetHelper is a java class which helps android developer to perform internet communication without any external third party libraries. NetHelper uses built-in android HttpUrlConnection.class to perform every kind of network requests.__
 
  ## What you can do with NetHelper are the following.
 * Sending GET & POST requests.
