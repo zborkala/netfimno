@@ -9,7 +9,7 @@ __Android NetHelper is a java class which helps android developer to perform int
 
  ## All you need is
 
-  * Add the following permission in your AndroidManifest.xml
+  * Add the following permissions in your AndroidManifest.xml
 ```
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
