@@ -1,4 +1,4 @@
-package com.fimno.myshop.helper;
+package com.example.myapp;
 
 import android.app.Activity;
 import android.app.DownloadManager;
