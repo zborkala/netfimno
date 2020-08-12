@@ -93,8 +93,7 @@ __Android NetHelper is a java class which helps android developer to perform int
                         });
  ```
   ## Downloading a file from the server 
- void progress(int percent);
-        void complete(); 
+
  ```
      new NetHelper(context,"https://example.com/somfile.mp3")
      .setFileName("mySong.mp3")
