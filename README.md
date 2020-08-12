@@ -25,6 +25,7 @@ __Android NetHelper is a java class which helps android developer to perform int
                             @Override
                             public void onSuccess(String response) {
                              //Your code is here
+                             // if(NetHelper.isJSON(response)) {}
                             }
                             }); 
  ```
