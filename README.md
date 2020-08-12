@@ -121,4 +121,8 @@ __Android NetHelper is a java class which helps android developer to perform int
   ## JSON Checker
   You can also check the response whether is in JSON format or not using static `NetHelper.isJSON(response)` method 
   `NetHelper.isJSON(response)` returns true if the response is in JSON format. Otherwise, it returns false.
-
+  
+ ### For mor info contact us
+ Website: https://fimno.com
+ Email: zborkala@gmail.com
+ 
