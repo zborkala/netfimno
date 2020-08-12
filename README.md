@@ -112,8 +112,8 @@ __Android NetHelper is a java class which helps android developer to perform int
           }
      }).download(true);
  ```
- .setFileName(), .setPath() and setDownload() are optionals. You can use it or leave it like this.
+ `.setFileName()`, `.setPath()` and `setDownload()` are optionals. You can use it or leave it like this.
  ```
  new NetHelper(context,"https://example.com/somfile.mp3").download(true);
 ``` 
- .download(true) to make notification visible and .download(false) is to make it invisible
+ `.download(true)` to make notification visible and `.download(false)` is to make it invisible
