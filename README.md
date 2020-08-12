@@ -46,7 +46,7 @@ __Android NetHelper is a java class which helps android developer to perform int
                             }); 
 
 ```
- **Please note** Body.put() method has two parameters (String key,String value)
+ **Please note** `Body.put(String key,String value)` method has two parameters 
  
  ## Uploading files with other data
  
