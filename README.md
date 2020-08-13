@@ -1,8 +1,8 @@
-# Android NetHelper
+# Android NetFimno
 
-__Android NetHelper is a java class which helps android developer to perform internet communication without any external third party libraries. NetHelper uses built-in android HttpUrlConnection.class to perform every kind of network requests.__
+__Android NetFimno is a java class which helps android developer to perform internet communication without any external third party libraries. NetFimno uses built-in android HttpUrlConnection.class to perform every kind of network requests.__
 
- ## What you can do with NetHelper are the following.
+ ## What you can do with NetFimno are the following.
 * Sending GET & POST requests.
 * Uploading files and other data (optional) with progress indicators (like progressbar).
 * Downloading files from internet with progress indicators. You can hide and show the downloading notification.
@@ -15,17 +15,17 @@ __Android NetHelper is a java class which helps android developer to perform int
     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
 
 ```
-   * Include **NetHelper.java** and **Body.java** files in your package (com.example.yourapp)
+   * Include **NetFimno.java** and **Body.java** files in your package (com.example.yourapp)
 
 
  ## Sending GET Request.
 
  ```
- new NetHelper("https://example.com/something.php?id=3").get(new NetHelper.OnResult() {
+ new NetFimno("https://example.com/something.php?id=3").get(new NetFimno.OnResult() {
                             @Override
                             public void onSuccess(String response) {
                              //Your code is here
-                             // if(NetHelper.isJSON(response)) {}
+                             // if(NetFimno.isJSON(response)) {}
                             }
                             }); 
  ```
@@ -38,7 +38,7 @@ __Android NetHelper is a java class which helps android developer to perform int
                    .put("pwd", password)
                    .put("email", email);
                    
-   new NetHelper("https://example.com/something.php").post(body.getMap(), new NetHelper.OnResult() {
+   new NetFimno("https://example.com/something.php").post(body.getMap(), new NetFimno.OnResult() {
                             @Override
                             public void onSuccess(String response) {
                              //Your code is here
@@ -60,7 +60,7 @@ __Android NetHelper is a java class which helps android developer to perform int
     Body files = new Body()
                      .put("file1", "filePath1")
                      .put("file2", "filePath2");
-    new NetHelper(context,"https://example.com/something.php").multipart(files.getMap(), body.getMap(), new NetHelper.OnResultUpload() {
+    new NetFimno(context,"https://example.com/something.php").multipart(files.getMap(), body.getMap(), new NetFimno.OnResultUpload() {
                             @Override
                             public void onSuccess(String response) {   
                                //Your code comes here
@@ -80,7 +80,7 @@ __Android NetHelper is a java class which helps android developer to perform int
     Body files = new Body()
                      .put("file1", "filePath1")
                      .put("file2", "filePath2");
-    new NetHelper(context,"https://example.com/something.php").multipart(files.getMap(), null, new NetHelper.OnResultUpload() {
+    new NetFimno(context,"https://example.com/something.php").multipart(files.getMap(), null, new NetFimno.OnResultUpload() {
                             @Override
                             public void onSuccess(String response) {   
                                //Your code comes here
@@ -96,10 +96,10 @@ __Android NetHelper is a java class which helps android developer to perform int
   ## Downloading a file from the server 
 
  ```
-     new NetHelper(context,"https://example.com/somfile.mp3")
+     new NetFimno(context,"https://example.com/somfile.mp3")
      .setFileName("mySong.mp3")
      .setPath("audios")
-     .setOnDownload(new NetHelper.OnDownload() {
+     .setOnDownload(new NetFimno.OnDownload() {
           @Override
           public void progress(int percent) {   
               // Progress is always in percentage
@@ -114,13 +114,13 @@ __Android NetHelper is a java class which helps android developer to perform int
  ```
  `.setFileName()`, `.setPath()` and `setDownload()` are optionals. You can use it or leave it like this.
  ```
- new NetHelper(context,"https://example.com/somfile.mp3").download(true);
+ new NetFimno(context,"https://example.com/somfile.mp3").download(true);
 ``` 
  `.download(true)` to make notification visible and `.download(false)` is to make it invisible
 
   ## JSON Checker
-  You can also check the response whether is in JSON format or not using static `NetHelper.isJSON(response)` method 
-  `NetHelper.isJSON(response)` returns true if the response is in JSON format. Otherwise, it returns false.
+  You can also check the response whether is in JSON format or not using static `NetFimno.isJSON(response)` method 
+  `NetFimno.isJSON(response)` returns true if the response is in JSON format. Otherwise, it returns false.
   
  ### For mor info contact us
  Website: https://fimno.com
