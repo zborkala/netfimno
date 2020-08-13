@@ -31,7 +31,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Map;
 
-public class NetHelper {
+public class NetFimno {
     String baseUrl;
     Context context;
     int uploaded = 0;
@@ -42,12 +42,12 @@ public class NetHelper {
     int dl_progress;
     OnDownload onDownload;
 
-    public NetHelper(Context context, String url) {
+    public NetFimno(Context context, String url) {
         this.context = context;
         baseUrl = url;
     }
 
-    public NetHelper(String url) {
+    public NetFimno(String url) {
         baseUrl = url;
     }
 
@@ -326,17 +326,17 @@ public class NetHelper {
             }
         }
     }
-    public NetHelper setOnDownload(OnDownload onDownload) {
+    public NetFimno setOnDownload(OnDownload onDownload) {
         this.onDownload = onDownload;
         return this;
     }
 
-    public NetHelper setFileName(String fileName) {
+    public NetFimno setFileName(String fileName) {
         this.fileName = fileName;
         return this;
     }
 
-    public NetHelper setPath(String path) {
+    public NetFimno setPath(String path) {
         this.path = path;
         return this;
     }
