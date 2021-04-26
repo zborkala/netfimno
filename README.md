@@ -1,6 +1,6 @@
 # Android NetFimno
 
-__Android NetFimno is a java class which helps android developer to perform internet communication without any external third party libraries. NetFimno uses built-in android HttpUrlConnection.class to perform every kind of network requests.__
+__Android NetFimno is a java class which helps android developer to perform internet communication without any external third party libraries. NetFimno uses built-in android HttpUrlConnection.class to perform every kind of network requests and supports in all android versions.__
 
  ## What you can do with NetFimno are the following.
 * Sending GET & POST requests.
